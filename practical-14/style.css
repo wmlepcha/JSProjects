@@ -1,0 +1,127 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(45deg, #B70404, #FFD95A, #F79327, #FFE569);
+  background-size: 400% 400%;
+  animation: gradientAnimation 10s ease infinite;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Russo One', sans-serif;
+}
+
+@keyframes gradientAnimation {
+0% {
+  background-position: 0% 50%;
+}
+50% {
+  background-position: 100% 50%;
+}
+100% {
+  background-position: 0% 50%;
+}
+}
+.title {
+  width: 30%;
+  height: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-right: 10px groove white;
+}
+.title h1 {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  transform: rotate(260deg);
+
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-size: 80px;
+  position: absolute;
+  right: 30px;
+}
+.title p {
+  margin: 20px;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  transform: rotate(260deg);
+  font-size: 24px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  position: absolute;
+  right: 30px;
+  top: -30px;
+ 
+}
+.calculator {
+  display: block;
+  width: 500px;
+  height: 600px;
+  margin: 50px auto;
+  background-color: #000;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 20px;
+}
+
+.display {
+  width: 100%;
+  padding: 25px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  background-color: white;
+  color: black;
+  border: none;
+  text-align: right;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.buttons button {
+  width: calc(25% - 10px); /* Adjust the width based on the desired gap between buttons */
+  margin-bottom: 10px;
+}
+
+button {
+  width: 100%;
+  padding: 40px;
+  font-size: 16px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.operator {
+  background-color: gold;
+  color: black;
+  font-weight: 900;
+  font-size: 30px;
+}
+
+.clear {
+  background-color: #C07F00;
+  color: black;
+  font-weight: 900;
+  font-size: 30px;
+}
+
+.equal {
+  background-color: #C07F00;
+  color: black;
+  font-weight: 900;
+  font-size: 30px;
+}

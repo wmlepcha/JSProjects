@@ -1,0 +1,77 @@
+.container {
+    height: 100vh;
+    width: 100%;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .wrapper {
+    height: 500px;
+    width: 300px;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  button {
+    padding: 20px;
+    background-color: black;
+    color: white;
+  }
+  .formWrap1 {
+    height: 100%;
+    width: 100%;
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .formWrap2 {
+    height: 100%;
+    width: 100%;
+    background-color: orange;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .formWrap3 {
+    height: 100%;
+    width: 100%;
+    background-color: red;
+    display: none;
+    justify-content: center;
+    align-items: center;
+  }
+  .studyingbox {
+    background-color: cyan;
+    height: 300px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .workingbox {
+    background-color: yellowgreen;
+    height: 300px;
+    width: 300px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+  }
+  .otherbox {
+    background-color: burlywood;
+    height: 300px;
+    width: 300px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+  }
+  .checkboxwrap {
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    text-transform: lowercase;
+  }
