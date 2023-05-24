@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Russo One', sans-serif;
+}
+.container {
+  height: 100vh;
+  width: 100%;
+  background-image: url(bg.jpg);
+  /* background: linear-gradient(130deg, #FFD95A, #F79327); */
+background-size: cover;
+background-position: top center;
+
+  color: #fff;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+ 
+}
+.boy{
+  height: 220px;
+  width: 180px;
+  position: absolute;
+  left: -10px;
+  top: -130px;
+
+}
+.message {
+  display: none;
+  height: 150px;
+  width: 200px;
+  position: absolute;
+  left: 100px;
+  top: -230px;
+}
+.todoApp {
+  width: 500px;
+border: 2px solid white;
+backdrop-filter: blur(8px) saturate(160%);
+    -webkit-backdrop-filter: blur(8px) saturate(160%);
+    background-color: rgba(17, 25, 40, 0.25);
+    border-radius: 12px;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+ 
+}
+h2 {
+  font-size: 30px;
+  margin-left: 80px;
+}
+
+
+.row {
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20px;
+  background-color: #FDE2F3;
+  border-radius: 12px;
+  color: white;
+
+}
+input {
+ height: 100%;
+  flex: 1;
+  border: none;
+  outline: none;
+background-color: transparent;
+  padding: 20px;
+
+  font-size: 16px;
+
+}
+
+button {
+  border: none;
+  outline: none;
+  padding: 20px;
+  background-color: #D4ADFC;
+  color: black;
+  cursor: pointer;
+  font-size: 16px;
+float: right;
+}
+
+.showitem {
+  width: 500px;
+
+border: 2px solid white;
+backdrop-filter: blur(8px) saturate(160%);
+    -webkit-backdrop-filter: blur(8px) saturate(160%);
+    background-color: rgba(17, 25, 40, 0.25);
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    box-shadow: #D4ADFC 0px 0px 0px 2px inset, rgb(255, 255, 255) 10px -10px 0px -3px, #D4ADFC  10px -10px, rgb(255, 255, 255) 20px -20px 0px -3px, #D4ADFC  20px -20px;
+}
+ul li {
+  margin-left: 40px;
+  list-style: none;
+  font-size: 18px;
+  padding: 12px;
+  user-select: none;
+  cursor: pointer;
+  position: relative;
+}
+ul li::before {
+  content: '';
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-image: url(circle.png);
+  background-size: cover;
+  background-position: center;
+  left: -40px;
+}
+
+.checked {
+  color: red;
+  text-decoration: line-through;
+  text-decoration-color: white;
+}
+.checked::before {
+  background-image: url(check.png);
+top: 10px;
+}
+span {
+position: absolute;
+right: 0;
+top: 5px;
+font-size: 35px;
+color: grey;
+text-align: center;
+height: 35px;
+width: 35px;
+text-align: center;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+span:hover{
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+}
+
+
+

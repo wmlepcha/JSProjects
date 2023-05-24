@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="container">
+      <div class="todoApp" draggable="true">
+        <img src="a.png" alt="boy sitting" class="boy" />
+        <img src="message.png" alt="message error" class="message" />
+        <h2>Study planner</h2>
+        <div class="row">
+          <input type="text" id="input-box" placeholder="Enter your topic" />
+          <button onclick="addLesson()">ADD</button>
+        </div>
+      </div>
+      <div class="showitem">
+        <ul id="showData"></ul>
+      </div>
+    </section>
+    <script src="main.js"></script>
+  </body>
+</html>
